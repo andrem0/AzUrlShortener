@@ -20,7 +20,7 @@ namespace Cloud5mins.Function
             ILogger log)
         {
             log.LogInformation($"C# HTTP trigger function processed for Url: {shortUrl}");
-            log.logInformation($"Query parameters: {req.RequestUri.Query}");
+            log.LogInformation($"Query parameters: {req.RequestUri.Query}");
             string redirectUrl = "https://azure.com";
 
             if (!String.IsNullOrWhiteSpace(shortUrl))
