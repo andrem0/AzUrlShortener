@@ -53,7 +53,7 @@ namespace Cloud5mins.Function
             }
 
             var res = req.CreateResponse(HttpStatusCode.Redirect);
-            res.Headers.Add("Location", $"{redirectUrl}{req.RequestUri.Query});
+            res.Headers.Add("Location", $"{redirectUrl}{req.RequestUri.Query}");
             return res;
         }
   }
